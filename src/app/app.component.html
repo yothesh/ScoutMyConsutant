@@ -2,6 +2,7 @@
 
 
 
+
 <md-toolbar color="primary">
   <span>Scout My Consultant</span>
   <span class="example-fill-remaining-space"></span>
@@ -9,8 +10,10 @@
 </md-toolbar>
 
 <md-menu #appMenu="mdMenu">
-  <button md-menu-item> Settings </button>
-  <button md-menu-item> Help </button>
+  <button md-menu-item  routerLink="/" > Main </button>
+  <button md-menu-item routerLink="/about"> About </button>
 </md-menu>
 
-<app-users> </app-users>
+
+<router-outlet></router-outlet>
+
